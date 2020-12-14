@@ -7,3 +7,4 @@ psycopg2
 graphene_django
 django-filter
 gunicorn
+django-cors-headers
