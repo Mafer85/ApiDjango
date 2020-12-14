@@ -28,14 +28,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 
-CORS_ALLOWED_METHODS=[
-    'DELETE',
-    'GET',
-    'OPTIONS',
-    'PATCH',
-    'POST',
-    'PUT',
-]
+
 # Application definition
 
 INSTALLED_APPS = [
