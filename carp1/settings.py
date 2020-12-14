@@ -27,10 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-CORS_ALLOWED_ORIGINS=[
-    '*',
-    'localhost'
-]
 
 CORS_ALLOWED_METHODS=[
     'DELETE',
@@ -50,11 +46,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
+    'carp2',
     'corsheaders',
-    'carp2'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware'
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -63,8 +61,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware'
+
 ]
 
 ROOT_URLCONF = 'carp1.urls'
@@ -148,3 +145,8 @@ GRAPHENE ={
 'SCHEMA':'carp1.schema.schema'
 }
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CORS_ORIGIN_WHITELIST=(
+'http://localhost:8080',
+'*'
+)
