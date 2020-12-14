@@ -5,3 +5,4 @@ pytz==2020.4
 whitenoise==5.2.0
 psycopg2
 graphene_django
+gunicorn
