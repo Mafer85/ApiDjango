@@ -26,28 +26,7 @@ SECRET_KEY = 'o)f!pk59yd$fqo$wi!hjfl5un_=ynday2(8n5&ledlsm3vhnwr'
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-CORS_ALLOW_METHODS = [
-    'DELETE',
-    'GET',
-    'OPTIONS',
-    'PATCH',
-    'POST',
-    'PUT',
-]
 
-CORS_ALLOW_HEADERS=[
-    'accept',
-    'accept-enconding',
-    'authorization',
-    'content-type',
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
-]
-
-CORS_ALLOWED_ORIGINS=['*']
 
 # Application definition
 
