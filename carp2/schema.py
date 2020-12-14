@@ -4,6 +4,7 @@ from graphene import relay, ObjectType
 from graphene_django import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
 from graphql_relay.node.node import from_global_id
+from corsheaders.default import default_methods
 
 from .models import empleado,categoria, producto, factura
 class empleadoNode (DjangoObjectType):
