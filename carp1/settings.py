@@ -139,5 +139,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CORS_ORIGIN_WHITELIST=(
 'http://localhost:8080',
-'*'
+'https://finalcomercial-bd4f6.web.app/',
 )
